@@ -4,7 +4,7 @@ This project implements a complete DevOps infrastructure setup using Terraform, 
 
 ## 🏗️ Architecture Overview
 
-The project consists of two main components:
+The project consists of three main components:
 
 ### 1. Jenkins/SonarQube Server
 - EC2 Instance (t2.large)
@@ -19,6 +19,13 @@ The project consists of two main components:
 - Node Exporter
 - Grafana
 - Ports: 9090 (Prometheus), 9100 (Node Exporter), 3000 (Grafana), 22 (SSH)
+
+### 3. Containerized Application (EKS)
+- Dockerized application
+- Kubernetes deployment configuration
+- EKS-ready setup
+- Environment configuration
+- Kubernetes service definitions
 
 ## 🚀 Prerequisites
 
@@ -41,6 +48,13 @@ The project consists of two main components:
 │   ├── variables.tf      # Variable definitions
 │   ├── provider.tf       # AWS provider configuration
 │   └── install.sh        # Monitoring tools installation
+├── Dockerizing-Kubernetes-EKS/
+│   ├── src/              # Application source code
+│   ├── Kubernetes/       # Kubernetes configuration files
+│   │   ├── deployment.yml
+│   │   └── service.yml
+│   ├── Dockerfile        # Container image definition
+│   └── .env              # Environment configuration
 └── README.md
 ```
 
