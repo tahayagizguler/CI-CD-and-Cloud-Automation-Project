@@ -2,6 +2,8 @@
 
 This project implements a complete DevOps infrastructure setup using Terraform, including Jenkins CI/CD server, SonarQube for code quality analysis, and a monitoring stack with Prometheus and Grafana.
 
+<img width="1408" height="768" alt="Gemini_Generated_Image_9t8klq9t8klq9t8k" src="https://github.com/user-attachments/assets/3ca7577b-4c04-43d9-8dd1-0bb15483c60a" />
+
 ## 🏗️ Architecture Overview
 
 The project consists of three main components:
